@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import SearchBox from './components/SearchBox';
 const App = () => {
   const [movies, setMovies] = useState([]);
 	const [favourites, setFavourites] = useState([]);
