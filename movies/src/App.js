@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MovieList from './components/MovieList';
@@ -14,7 +14,7 @@ const App = () => {
 	const [searchValue, setSearchValue] = useState('');
 
 	const getMovieRequest = async (searchValue) => {
-		const url = `https://movies-two-theta.vercel.app/Search`;
+		const url = 'https://movies-two-theta.vercel.app/Search';
 
 		const response = await fetch(url);
 		const responseJson = await response.json();
